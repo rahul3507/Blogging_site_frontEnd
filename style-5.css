@@ -1,0 +1,451 @@
+/* reset and common code starts here...... */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    outline: 0;
+    font-weight: 0;
+}
+html{
+    background-color: #fafafa;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    /* font-family: "Italianno", cursive; */
+    font-family: "Roboto", sans-serif;
+
+}
+body{
+    background-color: #fff;
+    max-width: 100%;
+    
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+
+}
+.text-white{
+    color: white;
+}
+.section-heading{
+    font-size: 8rem;
+    font-family: "Italianno", cursive;
+    text-align: center;
+    font-weight: 300;
+
+}
+.section-center{
+    min-height: 65vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 1rem;
+    justify-content: space-evenly;
+}
+
+.btn{
+    background-color: orange;
+    font-size: 1.5rem;
+    padding: 1rem 0rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+}
+/* reset and common code ends here...... */
+
+
+/* header starts here.......  */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: black;
+    padding: 2rem 1rem;
+
+    position: static;
+    z-index: 10;
+    top: 0;
+    min-height: 5vh;
+}
+.logo-figure{
+    border:1px solid white
+}
+.logo-figure .logo{
+    font-size: 4rem;
+}
+nav li{
+    display: inline-block;
+    margin-right: 2rem;
+    padding: 1rem;
+}
+nav li:last-child{
+    margin-right: 0;
+}
+nav li:hover{
+    background-color: rgb(92, 92, 92);
+    border-radius: 0.6rem;
+}
+.nav-link{
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* header ends here........ */
+
+/* banner starts here......... */
+#blog-banner-section{
+    display: flex;
+    padding: 5rem 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+    
+}
+.banner-heading{
+    display: inline block;
+    padding: 1rem;
+    font-size: 4rem;
+    background-color: black;
+    color: white;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+}
+.banner-description{
+    font-size: 3rem;
+    font-family: "Italianno", cursive;
+    text-align: justify;
+}
+
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+.banner-img{
+    width: 55rem;
+    height: 45rem;
+    border: 0.3rem solid black;
+}
+/* banner ends here........ */
+
+/* about me section starts here.... */
+#blog-about{
+    background-color: rgb(102, 102, 102);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-container{
+    display: flex;
+    margin: 2rem 6rem;
+}
+.card{
+    background-color: #d7d7d7;
+    flex: 1;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 2rem;
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-header{
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 2rem;
+    font-weight: 250;
+}
+.card--description{
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+}
+.card-btn{
+    align-self: center;
+    width: 140px;
+    
+}
+/* about me section ends here.... */
+
+/* archives section starts here........ */
+#archives{
+    padding: 5rem 1rem;
+}
+.archives-container{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    align-items: center;
+    padding: 2rem;
+}
+.archives-container-lists{
+    display: flex;
+    text-align: center;
+}
+.archives-container-list{
+    margin: 2rem;
+
+}
+.archives-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.6rem;
+    transition: .5s;
+}
+.archives-img:hover{
+    transform: scale(1.1);
+}
+/* archives section ends here/........ */
+
+/* blog post starts here....... */
+.blog-posts{
+
+}
+.blog-posts-heading{
+    margin-bottom: 5rem;
+}
+.blog-post{
+    width: 70%;
+    display: flex;
+    margin: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222, -0.1rem 0 0.1rem #222;
+    transition: 0.5s;
+}
+.blog-post:hover{
+    transform: scale(1.1);
+}
+.blog-img{
+    height: 100%;
+    width: 100%;
+}
+.blog-posts-aside{
+    flex: 1;
+}
+.blog-content{
+    flex: 2;
+ 
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+.blog-heading{
+    font-size: 2.5rem;
+}
+.blog-sub-heading{
+    font-size: 2rem;
+}
+.blog-description{
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.blog-button{
+    width: 150px;
+
+}
+/* blog post ends here..... */
+/* contact starts here........... */
+#contact-section{
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+.contact-form{
+    padding: 2rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem black, -0.1rem 0rem 0.1rem black;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7rem;
+}
+.form-control{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-control label{
+    font-size: 1.6rem;
+    flex: 0.2;
+    text-align: left;
+}
+.form-control input , textarea{
+    font-size: 1.8rem;
+    padding: 1rem;
+    flex:0.8;
+    width: 40rem;
+    border: none;
+    border: 0.6rem;
+}
+textarea{
+    height: 15vh;
+    resize: none;
+}
+.form-btn-field{
+    display: flex;
+    justify-content: flex-end;
+}
+.contact-btn{
+    width: 90px;
+}
+/* contact ends here....... */
+
+/* footer starts here......., */
+footer{
+    background-color: #222;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    min-height: 10vh;
+    align-items: center;
+}
+.copyright-text{
+    font-size: 1.5rem;
+    color: white;
+}
+.footer-icon{
+    font-size: 2.5rem;
+}
+
+/* footer ends here........ */
+
+
+/* responsive starts here........ */
+@media (max-width: 992px) {
+#blog-banner-section{
+    flex-direction: column;
+
+}
+#blog-banner-section article{
+    width: 80%;
+
+}
+.banner-img{
+    width: 80%;
+
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    
+}
+
+.card{
+    width: 42%;
+    flex: none;
+}
+
+}
+@media (max-width: 768px) {
+    .card-container{
+    
+        width: 60%;
+        text-align: center;
+        flex-direction: column;
+        
+    }
+    
+    .card{
+        width: 100%;
+        flex: none;
+    }
+    .archives-container-lists{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blog-post{
+        width: 80%;
+        
+    }
+}
+@media (max-width: 600px) {
+html{
+    font-size: 48.5%;
+}
+header{
+    flex-direction: column;
+    text-align: center;
+}
+nav ul{
+    padding-left: 0;
+}
+nav li{
+    display: block;
+    margin:1rem 0;
+    text-align: center;
+    
+}
+#blog-banner-section article{
+    width: 90%;
+}
+.banner-img{
+    width: 90%;  
+    
+}
+.card-container{
+    
+    width: 80%;
+    text-align: center;
+    flex-direction: column;
+    
+}
+
+.card{
+    width: 100%;
+    flex: none;
+}
+
+.archives-container-lists{
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog-post{
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 3rem;
+}
+.contact-form{
+    width: 90%;
+    margin-bottom: 7rem;
+}
+.form-control{
+    flex-direction: column;
+
+}
+.form-control label{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+footer{
+    flex-direction: column;
+}
+.copyright-text{
+    margin-top: 1.5rem;
+}
+footer ul{
+    display: flex;
+    margin: 1.5rem;
+}
+.footer-icon{
+    padding: 1.3rem;
+}
+.form-control input , textarea{
+    max-width: 100%;
+}
+}
+@media (max-width: 400px) {
+
+}
+/* responsive ends here....... */
